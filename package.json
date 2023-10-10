@@ -2,7 +2,7 @@
 	"name": "geministore",
 	"version": "1.0.0",
 	"description": "e-commerce website",
-	"main": "src/server.js",
+	"main": "dist/server.js",
 	"dependencies": {
 		"abbrev": "^1.1.1",
 		"accepts": "^1.3.8",
