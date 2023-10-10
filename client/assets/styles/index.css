@@ -1500,11 +1500,11 @@ nav ul li {
 	height: 50px;
 	width: 100%;
 	min-width: 110px;
-	border-radius:5px;
-	-webkit-border-radius:5px;
-	-moz-border-radius:5px;
-	-ms-border-radius:5px;
-	-o-border-radius:5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
 
 .sel-table ul li:hover {
@@ -1513,13 +1513,13 @@ nav ul li {
 }
 
 .inactive-li {
-	background-color: #111111;
-	color: white;
+	background-color: whitesmoke;
+	color: #111111;
 }
 
 .active-li {
-	color: #111111;
-	background-color: whitesmoke;
+	color: #ffffff;
+	background-color: #111111;
 }
 
 .view-all {
@@ -2239,16 +2239,6 @@ footer {
 		width: 600px;
 		column-gap: 5px;
 		padding: 0;
-	}
-
-	.inactive-li {
-		border: none;
-		background-color: transparent;
-		border: 2px solid #f4f4f6;
-	}
-
-	.active-li {
-		background-color: #111111;
 	}
 
 	.sel-box {
