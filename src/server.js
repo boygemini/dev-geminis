@@ -55,7 +55,8 @@ app.get("/checkout", (req, res) => {
 });
 
 app.get("/assets", (req, res) => {
-	const path = resolve(process.env.STATIC_DIR + "assets/");
+	console.log(__dirname)
+	const path = resolve(process.env.STATIC_DIR + "assets");
 	res.sendFile(path);
 });
 
