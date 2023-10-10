@@ -15,7 +15,7 @@
 		{ "src": "/api/.*", "dest": "src/server.js" },
 		{
 			"src": "/(.*)",
-			"dest": "/client/assets/$1"
+			"dest": "/client/assets/"
 		}
 	]
 }
