@@ -1,6 +1,15 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
+app.use(
+	cors({
+		origin: "",
+		methods: ["POST", "GET"],
+		credentials: true,
+	})
+);
 const { resolve } = require("path");
+
 // Replace if using a different env file or config
 const env = require("dotenv").config({ path: "./.env" });
 
@@ -16,7 +25,7 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY, {
 
 const PORT = process.env.PORT || 8080;
 
-app.use(express.static(process.env.STATIC_DIR));
+// app.use(express.static(process.env.STATIC_DIR));
 app.use(
 	express.json({
 		// We need the raw body to verify webhook signatures.
