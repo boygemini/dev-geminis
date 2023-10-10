@@ -1231,6 +1231,11 @@ p span {
 	-o-border-radius: 0px;
 	background-color: white;
 	min-height: 60px;
+	;
+}
+
+.shadow{
+	box-shadow: rgba(32, 3, 60, 0.277) 0px 25px 20px -20px
 }
 
 /* #sec-name-cellphones,
