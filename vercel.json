@@ -6,16 +6,16 @@
 			"use": "@vercel/node"
 		},
 		{
-			"src": "client",
+			"src": "client/assets",
 			"use": "@vercel/static-build",
-			"config": { "outputDirectory": "dist/client" }
+			"config": { "outputDirectory": "dist/client/assets" }
 		}
 	],
 	"routes": [
 		{ "src": "/api/.*", "dest": "src/server.js" },
 		{
 			"src": "/(.*)",
-			"dest": "/client/$1"
+			"dest": "/client/assets/$1"
 		}
 	]
 }
