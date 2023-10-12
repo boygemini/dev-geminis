@@ -561,7 +561,7 @@ const customerInformationReview = (customerInfo) => {
 
 	document.querySelector(".billing").innerHTML = `
 				<h1>Billing Information</h1>
-				<p class="name">${saved.billingInformation.name}</p>
+				<p class="name">${customerInfo.billingInformation.name}</p>
 				<p class="s-details">
 					${customerInfo.billingInformation.streetAddress},
 			${customerInfo.billingInformation.streetAddress2}<br>
