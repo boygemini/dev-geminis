@@ -1545,11 +1545,6 @@ nav ul li {
 .view-all:active,
 .view-all:hover {
 	background-color: whitesmoke;
-	border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	-ms-border-radius: 3px;
-	-o-border-radius: 3px;
 }
 
 .viewall-arrow {
@@ -1698,7 +1693,7 @@ nav ul li {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	min-width: 100%;
-	font-weight: 500;
+	font-weight: 400 !important;
 	color: #111111b5;
 }
 

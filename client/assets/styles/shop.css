@@ -73,7 +73,6 @@
 
 .top-nav {
 	width: 100%;
-	height: 10%;
 	background-color: transparent;
 	position: relative;
 }
@@ -1231,11 +1230,10 @@ p span {
 	-o-border-radius: 0px;
 	background-color: white;
 	min-height: 60px;
-	;
 }
 
-.shadow{
-	box-shadow: rgba(32, 3, 60, 0.277) 0px 25px 20px -20px
+.shadow {
+	box-shadow: rgba(32, 3, 60, 0.277) 0px 25px 20px -20px;
 }
 
 /* #sec-name-cellphones,
@@ -1287,8 +1285,7 @@ p span {
 }
 
 .all-category:hover {
-	background-color: #111111;
-	color: white;
+	background-color: whitesmoke;
 }
 
 .full-cat h1,
@@ -1534,13 +1531,12 @@ select:hover {
 
 .item-description {
 	font-size: 14px;
-	font-weight: 500;
+	font-weight: 400;
 	color: #090a0ab6;
 	max-height: 75px;
 	text-overflow: ellipsis;
 	/* overflow: hidden; */
 	white-space: wrap;
-	font-weight: 500;
 	color: #111111b5;
 }
 /****************/
@@ -2491,6 +2487,7 @@ footer {
 		position: relative;
 		min-width: 95%;
 		max-width: 95%;
+		height: 80px;
 	}
 
 	.shop-body {
