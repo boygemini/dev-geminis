@@ -6,16 +6,6 @@
 #body {
 	width: 90%;
 	margin: auto;
-	display: flex;
-	flex-direction: row-reverse;
-	margin-top: 15vh !important;
-	/* column-gap: 30px; */
-	background-color: whitesmoke;
-}
-
-.Tab,
-.Input {
-	background-color: white !important;
 }
 
 .slimbanner {
@@ -62,6 +52,7 @@
 
 .top-nav {
 	width: 100%;
+	height: 10%;
 	background-color: transparent;
 	position: relative;
 }
@@ -107,12 +98,6 @@ nav,
 	-moz-transition: all 0.2s ease-in-out;
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
-}
-
-.checkout-top {
-	width: 100%;
-	position: sticky;
-	background-color: whitesmoke;
 }
 
 .cart-box:hover {
@@ -448,22 +433,12 @@ nav ul li {
 
 .cart-body {
 	height: auto;
-	width: 50%;
+	width: 80%;
+	margin: auto;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding: 40px;
-}
-
-.side-image {
-	width: 50%;
-	background-image: url("../images/cell-big2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	height: calc(100vh - 60px);
-	position: sticky;
-	top: 30px;
+	margin-top: 20px;
+	margin-top: 10vh;
 }
 
 .cart-top {
@@ -471,7 +446,8 @@ nav ul li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	/* margin: auto; */
+	margin: auto;
+
 	padding: 0px 0px 0px 20px;
 }
 
@@ -508,16 +484,6 @@ nav ul li {
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
 	font-weight: 600;
-	transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-}
-
-.check-out:hover,
-.check-out:active {
-	background-color: #3382e3;
 }
 
 .continue {
@@ -548,6 +514,7 @@ nav ul li {
 .cart-full-details {
 	width: 80%;
 	height: auto;
+	margin: 20px auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -559,22 +526,15 @@ nav ul li {
 }
 
 .orders-in-cart {
-	opacity: 0;
 	display: block;
 	width: 100%;
 	height: auto;
-	/*border: 1px solid #090a0a32;
-	*/background-color: transparent !important;
+	/* border: 1px solid #090a0a32; */
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
-	transition: height 0.4s ease-in-out;
-	-webkit-transition: height 0.4s ease-in-out;
-	-moz-transition: height 0.4s ease-in-out;
-	-ms-transition: height 0.4s ease-in-out;
-	-o-transition: height 0.4s ease-in-out;
 }
 
 .checkout-unavailable {
@@ -592,12 +552,8 @@ nav ul li {
 .control {
 	display: flex;
 	justify-content: space-around;
+	column-gap: 15px;
 	width: 100%;
-	column-gap: 20px;
-	/* position: sticky;
-	bottom: 30px;
-	z-index: 800;
-	box-shadow: 0px 40px 0px 0px white; */
 }
 
 .back-arrow {
@@ -605,8 +561,11 @@ nav ul li {
 }
 
 .prev {
-	background-color: transparent;
-	border: none;
+	background-color: white;
+	border: 2px solid #111111;
+	width: 50%;
+	max-width: 120px;
+	min-width: 100px;
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
@@ -617,7 +576,6 @@ nav ul li {
 	justify-content: center;
 	align-items: center;
 	column-gap: 10px;
-	color: red !important;
 }
 
 /* .prev:hover {
@@ -629,7 +587,7 @@ nav ul li {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 80px;
+	height: 50px;
 	background-color: var(--black);
 	color: white;
 	cursor: pointer;
@@ -639,11 +597,6 @@ nav ul li {
 	-ms-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	border: 2px solid transparent;
-	font-size: 1.5rem !important;
-}
-
-#prev {
-	font-size: 1.2rem !important;
 }
 
 /* .next:hover {
@@ -656,61 +609,38 @@ nav ul li {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
+	width: auto;
 	height: auto;
-}
-
-.orders-in-cart {
-	/* box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 5px !important; */
-	padding: 0px !important;
-	/* background-color: rgba(255, 255, 255, 0.876) !important; */
-}
-
-.stepps,
-.orders-in-cart,
-.form-group input {
-
-}
-
-.stepps {
-	background-color: transparent !important;
-}
-
-.form-group input {
-	background-color: white;
+	transition: all 0.4s ease-out;
+	-webkit-transition: all 0.4s ease-out;
+	-moz-transition: all 0.4s ease-out;
+	-ms-transition: all 0.4s ease-out;
+	-o-transition: all 0.4s ease-out;
 }
 
 .fs {
 	width: 100%;
 	overflow: hidden;
-	display: flex;
-	background-color: grey;
+	transition: height 0.2s ease-out;
+	-webkit-transition: height 0.2s ease-out;
+	-moz-transition: height 0.2s ease-out;
+	-ms-transition: height 0.2s ease-out;
+	-o-transition: height 0.2s ease-out;
 }
 
 #error-message {
-	display: block !important;
-	opacity: 0;
+	display: none;
 	background-color: #ff000036;
 	color: red;
 	padding: 5px 10px;
 	align-self: flex-start;
 	border: 0.4px solid #ff000036;
+	opacity: 0;
 	transition: all 0.5s ease-out;
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
 	-ms-transition: all 0.5s ease-out;
 	-o-transition: all 0.5s ease-out;
-}
-
-#billing {
-	overflow: hidden;
-}
-
-.sh {
-	display: none !important;
-}
-
-.re {
-	display: none !important;
 }
 
 .show-error {
@@ -834,10 +764,6 @@ hr {
 	width: 100%;
 }
 
-#review {
-	row-gap: 0 !important;
-}
-
 .stepps {
 	/* border: 1px solid rgba(128, 128, 128, 0.365);
     border-radius: 3px;
@@ -936,22 +862,18 @@ label {
 }
 
 .card-form {
-	padding: 0px;
+	padding: 20px 0px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	row-gap: 20px;
 }
 
-.u-full-width {
-	display: none !important;
-}
-
 .payment-info {
 	height: auto;
 
 	background-color: white;
-	/* box-shadow: 0px 15px 25px -10px #021e541a; */
+	box-shadow: 0px 15px 25px -10px #021e541a;
 }
 
 #payment {
@@ -1074,11 +996,6 @@ form input[type="submit"] {
 	cursor: pointer;
 	height: 0;
 	width: 0;
-	transition: all 0.2s ease-in-out;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
 }
 
 /* Create a custom checkbox */
@@ -1102,7 +1019,7 @@ form input[type="submit"] {
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-	background-color: whitesmoke;
+	background-color: #11111160;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -1143,6 +1060,10 @@ form input[type="submit"] {
 }
 
 .ordercom {
+	align-self: baseline;
+	position: absolute;
+	top: 40px;
+	left: 40px;
 	font-size: 25px;
 	font-weight: bold;
 }
@@ -1153,13 +1074,14 @@ form input[type="submit"] {
 	align-items: center;
 	flex-direction: column;
 	row-gap: 20px;
-	padding: 20px;
 }
 
 .confirmation-code {
 	position: relative;
 	width: 100%;
-	background-color: transparent;
+	min-height: 50vh;
+	height: 100%;
+	background-color: white;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -1193,8 +1115,6 @@ form input[type="submit"] {
 
 .confirm-note p {
 	font-size: 14px;
-	text-align:center;
-	line-height:40px
 }
 
 .confirm-note strong {
@@ -1392,10 +1312,9 @@ form input[type="submit"] {
 	width: 100%;
 	margin-top: 50px;
 	height: 5px;
-	background-color: #111111;
+	background-color: whitesmoke;
 	position: relative;
-	z-index: 0;
-	/* z-index: 123; */
+	z-index: 123;
 }
 
 .stage-container {
@@ -1416,12 +1335,6 @@ form input[type="submit"] {
 	width: 25%;
 	height: 6px;
 	background-color: #0a6947;
-	transition: all 1s ease-in-out;
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	border: 3px;
 }
 
 .stages {
@@ -1492,30 +1405,18 @@ form input[type="submit"] {
 .cart-top {
 }
 
-#progress-bar {
-	background-color: #3382e3;
+.progress {
+	position: sticky;
+	top: 40px;
 }
 
 .completed {
-	background-color: #3382e3;
-	/* background-color: #086948; */
-	box-shadow: 0px 0px 0px 5px #3382e331;;
+	background-color: #086948;
+	box-shadow: 0px 0px 0px 5px #08694924;
 }
 
 .next-stage {
-	animation: flow 1s infinite linear forwards;
-	-webkit-animation: flow 1s infinite linear forwards;
-}
-
-@keyframes flow {
-	0%,
-	100% {
-		box-shadow: 0px 0px 0px 30px #3382e331, 0px 0px 0px 15px #3382e331;
-	}
-
-	50% {
-		box-shadow: 0px 0px 0px 15px #3382e331, 0px 0px 0px 0px #3382e331;
-	}
+	box-shadow: 0px 0px 0px 10px #08694924;
 }
 
 .comtext {
@@ -1560,7 +1461,6 @@ footer {
 	overflow: hidden;
 	animation: formout 1s ease-in-out;
 	-webkit-animation: formout 1s ease-in-out;
-	color: #3382e3;
 }
 
 .formslide {
@@ -1750,25 +1650,12 @@ footer {
 
 	#body {
 		width: 95%;
-		display: flex;
-		flex-direction: column;
-		margin-top: 0px !important;
-		background-color: transparent;
-	}
-
-	.checkout-top {
-		background-color: transparent;
 	}
 	.cart-body {
-		padding: 30px;
+		padding: 0px 10px;
 		width: 100%;
-		background-color: whitesmoke;
+		margin-top: 4vh;
 	}
-
-	.side-image {
-		display: none;
-	}
-
 	#mob-logo {
 		display: block;
 	}
@@ -1939,7 +1826,7 @@ footer {
 	}
 
 	.sec {
-		padding: 0;
+		padding: 10px 0px 25px 0px;
 	}
 
 	.form-group {
@@ -1953,6 +1840,7 @@ footer {
 	.confirmation-code {
 		justify-content: center;
 		align-items: center;
+		min-height: 70vh;
 	}
 
 	.confirm-note p {
@@ -1967,29 +1855,22 @@ footer {
 		margin: 0;
 		top: 20px;
 	}
-
-	footer {
-		margin-top: 100px !important;
-	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
 	#body {
 		width: 100%;
-		margin-top: 10vh !important;
-	}
-
-	.side-image {
 	}
 
 	.cart-body {
-		width: 70%;
-		padding: 30px;
+		margin-top: 15vh;
+		width: 100%;
+		padding: 0px;
 	}
 
 	.cart-top {
 		width: 95%;
-		padding: 10px !important;
+		padding-left: 0px;
 	}
 
 	.logo-nav {
@@ -2218,7 +2099,7 @@ footer {
 	}
 
 	.sec {
-		padding: 0px 0px;
+		padding: 30px 0px;
 	}
 
 	.orders-in-cart {
@@ -2233,14 +2114,11 @@ footer {
 @media screen and (min-width: 1201px) {
 	#body {
 		width: 95%;
-		max-width: 2000px;
-		margin: auto;
-		margin-top: 10vh !important;
 	}
 
 	.cart-body {
-		/* margin-top: 14vh; */
-		width: 70%;
+		margin-top: 14vh;
+		width: 100%;
 	}
 
 	.cart-full-details {
@@ -2347,6 +2225,11 @@ footer {
 		float: right;
 	}
 
+	#body {
+		max-width: 2000px;
+		margin: auto;
+	}
+
 	.top-nav {
 		position: absolute;
 		display: flex;
@@ -2392,7 +2275,7 @@ footer {
 	}
 
 	.sec {
-		padding: 0px 0px;
+		padding: 30px 0px;
 	}
 
 	.formslide {

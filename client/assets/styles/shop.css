@@ -73,6 +73,7 @@
 
 .top-nav {
 	width: 100%;
+	height: 10%;
 	background-color: transparent;
 	position: relative;
 }
@@ -285,12 +286,13 @@ nav ul li {
 	display: flex;
 	column-gap: 10px;
 	bottom: 30px;
-	background-color: white !important;
+	background-color: transparent;
 	border-radius: 3px;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
 	-o-border-radius: 3px;
+	padding: 2px;
 }
 
 .search {
@@ -1216,24 +1218,22 @@ p span {
 }
 
 .section-title {
-	width: calc(100% + 5px);
-	/* padding: 10px 0px; */
-	border-radius: 0px;
+	width: 100%;
+	padding: 10px 0px;
+	border-radius: 3px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
 	row-gap: 10px;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	-ms-border-radius: 0px;
-	-o-border-radius: 0px;
-	background-color: white;
-	min-height: 60px;
-}
-
-.shadow {
-	box-shadow: rgba(32, 3, 60, 0.277) 0px 25px 20px -20px;
+	/* border-bottom: 1px solid #111111b4; */
+	border-radius: 0;
+	/* z-index: 1; */
+	background-color: rgba(255, 255, 255, 0.462);
 }
 
 /* #sec-name-cellphones,
@@ -1256,12 +1256,12 @@ p span {
 .all-category {
 	cursor: pointer;
 	background-color: transparent;
-	color: blueviolet !important;
+	color: #111111;
 	font-weight: 500;
 	width: auto;
-	min-height: 100%;
+	height: 40px;
 	padding: 5px 10px;
-	border-radius: 0px !important;
+	border: 1px solid transparent;
 	transition: all 0.3s ease-in-out;
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -1271,12 +1271,7 @@ p span {
 	letter-spacing: 0.5px;
 	position: sticky;
 	top: 0;
-	border: none !important;
-	box-shadow: 0px 1px 0px 0px blueviolet;
-	-webkit-border-radius: 0px !important;
-	-moz-border-radius: 0px !important;
-	-ms-border-radius: 0px !important;
-	-o-border-radius: 0px !important;
+	border: 1px solid #111111;
 }
 
 #result-title {
@@ -1285,7 +1280,8 @@ p span {
 }
 
 .all-category:hover {
-	background-color: whitesmoke;
+	background-color: #111111;
+	color: white;
 }
 
 .full-cat h1,
@@ -1531,12 +1527,13 @@ select:hover {
 
 .item-description {
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 500;
 	color: #090a0ab6;
 	max-height: 75px;
 	text-overflow: ellipsis;
 	/* overflow: hidden; */
 	white-space: wrap;
+	font-weight: 500;
 	color: #111111b5;
 }
 /****************/
@@ -2487,7 +2484,6 @@ footer {
 		position: relative;
 		min-width: 95%;
 		max-width: 95%;
-		height: 80px;
 	}
 
 	.shop-body {
