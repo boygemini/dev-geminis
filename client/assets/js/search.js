@@ -101,7 +101,7 @@ search.addEventListener("input", async (event) => {
 		x += `
 		<div class="sug" onclick="sendQuery(event)">
 			<h1 id="sug-h1" onclick="sugClicked(event)">${suggestion[0]}</h1>
-			<img src="assets/images/thinarrow.png"/>
+			<img src="/assets/images/thinarrow.png"/>
 			<h1 class="category" id="sug-cat" disabled>${suggestion[1]}</h1>
 		</div>
 		`;
